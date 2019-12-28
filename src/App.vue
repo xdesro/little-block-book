@@ -2,14 +2,17 @@
   <div id="app">
     <TopNav />
     <router-view />
+    <Tray />
   </div>
 </template>
 
 <script>
 import TopNav from "./components/TopNav";
+import Tray from "./components/Tray";
 export default {
   components: {
-    TopNav
+    TopNav,
+    Tray
   }
 };
 </script>

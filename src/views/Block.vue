@@ -11,7 +11,7 @@
     font-size: 72px;
     line-height: 0.8;
     text-transform: uppercase;
-    letter-spacing: -0.065em;
+    letter-spacing: -0.06em;
 
     color: #efefef;
   }
