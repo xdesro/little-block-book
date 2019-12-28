@@ -1,6 +1,6 @@
 <template>
   <div class="settings">
-    <h1>Settings</h1>
+    <h1 class="view__title">Settings</h1>
   </div>
 </template>
 

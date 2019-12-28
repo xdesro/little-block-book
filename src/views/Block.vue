@@ -1,5 +1,19 @@
 <template>
   <div class="block">
-    <h1>Block List</h1>
+    <h1 class="view__title">Block List</h1>
   </div>
 </template>
+
+<style lang="scss">
+.view {
+  &__title {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    letter-spacing: -0.065em;
+
+    color: #efefef;
+  }
+}
+</style>
