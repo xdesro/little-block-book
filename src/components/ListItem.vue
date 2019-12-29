@@ -14,9 +14,8 @@
       </div>
     </div>
     <footer v-if="expanded" class="list-item__footer">
-      <p class="list-item__description">
-        Katie is too much of a cute pie to be allowed on regular internet, she
-        must be banned.
+      <p class="list-item__description" v-if="description">
+        {{ description }}
       </p>
       <div class="list-item__dates">
         <p>
@@ -47,6 +46,10 @@ export default {
     name: {
       type: String,
       default: ""
+    },
+    description: {
+      type: String,
+      required: false
     },
     blockedDate: {
       type: Date,
@@ -180,6 +183,7 @@ export default {
     text-align: right;
     text-transform: uppercase;
     color: $color__secondary--dark;
+    grid-column: 2;
   }
   &__description {
     font-size: 0.75rem;

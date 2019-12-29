@@ -8,6 +8,7 @@
         :handle="listItem.handle"
         :name="listItem.name"
         :purpose="purpose"
+        :description="listItem.description"
       />
     </section>
   </div>
@@ -23,7 +24,12 @@ export default {
       purpose: "block",
       listItems: [
         { handle: "@xdesro", name: "Henry Desroches" },
-        { handle: "@wutweetclann", name: "Tofu Loaf" }
+        {
+          handle: "@leviboenish",
+          name: "Holiday Limbo Heartthrob ❄️",
+          description:
+            "Levi is just too darn rad to be allowed to put he gotdam Tweeties on me gotdam Timeline."
+        }
       ]
     };
   }
