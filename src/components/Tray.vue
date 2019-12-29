@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Icon from "@/components/Icon";
+import Icon from "@/components/TrayIcon";
 export default {
   components: {
     Icon
@@ -55,6 +55,7 @@ export default {
   padding: 1rem;
   border-top: 1px solid $color__primary--dark;
   color: $color__secondary--dark;
+  background-color: $color__background--dark;
   padding: 2rem;
   &__list {
     display: grid;

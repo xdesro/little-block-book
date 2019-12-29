@@ -1,8 +1,34 @@
 <template>
   <div class="block">
-    <h1 class="view__title">Block List</h1>
+    <h1 class="view__title">Block<br />List</h1>
+    <section class="list">
+      <ListItem
+        v-for="(listItem, index) in listItems"
+        :key="index"
+        :handle="listItem.handle"
+        :name="listItem.name"
+        :purpose="purpose"
+      />
+    </section>
   </div>
 </template>
+<script>
+import ListItem from "@/components/ListItem";
+export default {
+  components: {
+    ListItem
+  },
+  data() {
+    return {
+      purpose: "block",
+      listItems: [
+        { handle: "@xdesro", name: "Henry Desroches" },
+        { handle: "@wutweetclann", name: "Tofu Loaf" }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss">
 .view {
@@ -15,5 +41,9 @@
 
     color: #efefef;
   }
+}
+.list {
+  padding-bottom: 5rem;
+  display: grid;
 }
 </style>
